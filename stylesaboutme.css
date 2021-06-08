@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background-color: #1b1b1b;
+}
+
+/* ///////////// NAV-LOGO ///////////// */
+.logo {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    width: 100px;
+}
+
+.nav__div {
+    padding: 60px 100px;
+    background: #1b1b1b;
+}
+
+/* ///////// ARTICLE SECTION ///////// */
+article {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background: #1b1b1b;
+}
+
+/* =================================== */
+h1, h2 {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    color: #1b1b1b;
+    background-color: rgba(255, 255, 255, 0.288);
+    padding: 4px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+i {
+    color: white;
+    width: 100px;
+}
+
+b {
+    color: #d3b639;
+}
+
+/* ///////////// IMG ///////////// */
+.div-10__img-10 {
+    width: 400px;
+    padding-bottom: 80px;
+}
+
+/* ////////// TEXT__IMG ////////// */
+.section-10__div-10 {
+    margin: 0 auto;
+    line-height: 30px;
+    text-align: center;
+    max-width: 1200px;
+}
+
+p {
+    color: rgb(129, 129, 129);
+}
+
+h3 {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 3.5rem;
+    padding-bottom: 60px;
+    color: white;
+}
+
+/* /////////// SECTION-20 /////////// */
+.cv1, .cv2 {
+    text-align: center;
+}
+
+.section-20__div-10 img {
+    width: 60px;
+    padding-bottom: 10px;
+    filter: invert(1);
+}
+
+.section-20__div-10 {
+    display: flex;
+    justify-content: center;
+    padding-top: 160px;
+    padding-bottom: 100px;
+    gap: 40px;
+}
+
+.downloadtext p {
+    background-color: rgba(255, 255, 255, 0.877);
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    font-size: 10px;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 6px 14px;
+}
+
+.section-20__div-10 div:hover {
+    opacity: 70%;
+}
+
+.section-20__div-10 img:hover {
+    width: 90px;
+    transition: .6s;
+}
+
+/* /////// MEDIA QUERY (1024px) /////// */
+@media(max-width: 1024px) {
+    .nav__div {
+        padding: 30px 40px;
+    }
+    
+    .section-20__div-10 img {
+        width: 50px;
+    }
+
+    h3 {
+        font-size: 3.5rem;
+        line-height: 50px;
+    }
+
+    .section-10__div-10 p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    article {
+        padding: 60px 40px;
+        padding-bottom: 150px;
+    }
+
+    .section-10__div-10 .div-10__img-10 {
+        width: 300px;
+    }
+}
+
+/* /////// MEDIA QUERY (480px) /////// */
+@media(max-width: 480px) {
+    .nav__div {
+        padding: 20px 25px;
+    }
+
+    .article__section-10 .div-10__img-10 {
+        width: 300px;
+    }
+
+    article {
+        padding: 60px 25px;
+        padding-bottom: 150px;
+    }
+
+    .section-20__div-10 {
+        gap: 40px;
+        padding-bottom: 100px;
+    }
+
+    .downloadtext, 
+    .downloadtext p {
+        width: 120px;
+        font-size: 8px;
+    }
+}
+
+/* /////// MEDIA QUERY (360px) /////// */
+@media(max-width: 360px) {
+    
+}
+

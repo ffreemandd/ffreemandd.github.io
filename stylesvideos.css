@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background-color: #1b1b1b;
+}
+
+/* ///////////// NAV-LOGO ///////////// */
+.logo {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    width: 100px;
+}
+
+.nav__div {
+    padding: 61px 100px;
+    background: #1b1b1b;
+}
+
+/* ///////// ARTICLE SE1ION ///////// */
+article {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 100px;
+    background: #1b1b1b;
+    padding-bottom: 15em;
+}
+
+/* =================================== */
+h1, h2 {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    color: #1b1b1b;
+    background-color: rgba(255, 255, 255, 0.288);
+    padding: 4px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+b {
+    color: #d3b639;
+}
+
+/* //////////// SECTION-00 //////////// */
+.article__section-00 {
+    max-width: 1900px;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.288);
+}
+
+.article__section-00 {
+    max-width: 1000px;
+    text-align: center;
+    margin-bottom: 120px;
+    line-height: 20px;
+}
+
+.article__section-00 h1 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 3.5rem;
+    line-height: 55px;
+}
+
+/* //////////// SECTION-10 //////////// */
+.article__section-10 b {
+    color: rgba(255, 255, 255, 0.288);
+}
+
+.article__section-10 {
+    max-width: 1900px;
+    margin: auto;
+}
+
+.article__section-10 p {
+    text-align: center;
+    margin-top: 30px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.288);
+    font-size: 14px;
+}
+
+.article__section-10 b {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.article__section-10 video {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* /////// MEDIA QUERY (1024px) /////// */
+@media(max-width: 1024px) {
+    .nav__div {
+        padding: 30px 40px;
+    }
+    
+    article {
+        padding: 60px 40px;
+        padding-bottom: 150px;
+    }
+
+    h1 p {
+        font-size: 2.5rem;
+    }
+}
+
+/* /////// MEDIA QUERY (480px) /////// */
+@media(max-width: 480px) {
+    .nav__div {
+        padding: 20px 25px;
+    }
+
+    h1 p {
+        font-size: 2rem;
+    }
+
+    .article__section-00 .text {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        line-height: 50px;
+    }
+
+    .article__section-10 .div-10__img-10 {
+        width: 250px;
+    }
+
+    article {
+        padding: 60px 25px;
+        padding-bottom: 150px;
+    }
+
+    .article__section-10 {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .article__section-10 p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .article__section-10 b {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+/* /////// MEDIA QUERY (360px) /////// */
+@media(max-width: 360px) {
+    h1 p {
+        font-size: 1.8rem;
+    }
+}
+

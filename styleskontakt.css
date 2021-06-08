@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background-color: #1b1b1b;
+}
+
+/* ///////////// NAV-LOGO ///////////// */
+.logo {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    width: 100px;
+}
+
+.nav__div {
+    padding: 61px 100px;
+    background: #1b1b1b;
+}
+
+/* ///////// ARTICLE SE1ION ///////// */
+h1, h2 {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    color: #1b1b1b;
+    background-color: rgba(255, 255, 255, 0.288);
+    padding: 4px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+b {
+    color: #d3b639;
+}
+
+/* //////////// SECTION-00 //////////// */
+.article__section-00 {
+    max-width: 650px;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.288);
+}
+
+.article__section-00 {
+    text-align: center;
+    line-height: 20px;
+}
+
+.article__section-00 h1 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 3.5rem;
+    line-height: 55px;
+}
+
+/* //////////// SECTION-10 //////////// */
+.article__section-10 {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 100px;
+    background: #1b1b1b;
+    color: rgb(121, 121, 121);
+}
+
+/* //////////// CONTAINER //////////// */
+
+.container .form .form-header .form-title span {
+    color: #fff;
+}
+
+.container .form .form-header .form-title {
+    text-align: center;
+    padding: 50px 0px;
+    font-size: 30px;
+}
+
+.article__section-10 .container {
+    background-color: rgba(255, 255, 255, 0.11);
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 40px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.container .form .form-label {
+    display: block;
+    padding: 8px 0px;
+}
+
+.container .form input {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.container .form .form-input, .form-textarea {
+    background: #1b1b1b;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 40px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: rgb(167, 167, 167);
+}
+
+.container .form .form-textarea {
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+    padding: 40px 0px;
+}
+
+.container .form .btn-submit {
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    font-weight: 800;
+    border: none;
+    padding: 15px 0px;
+    margin: 20px 0px 50px 0px;
+}
+
+/* /////// MEDIA QUERY (1024px) /////// */
+@media(max-width: 1024px) {
+    body .article__section-10,
+    body .logodiv {
+        padding: 30px 40px;
+    }
+
+    .nav__div {
+        padding: 30px 40px;
+    }
+
+    .article__section-00 {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+
+    .container .form .form-header .form-title {
+        font-size: 20px;
+    }
+
+    .article__section-10 .container {
+        margin-top: 0px;
+    }
+}
+
+/* /////// MEDIA QUERY (480px) /////// */
+@media(max-width: 480px) {
+    .article__section-10 .container {
+        background-color: rgba(255, 255, 255, 0.11);
+        width: 100%;
+        max-width: 650px;
+        margin: auto;
+        padding: 5px 15px;
+        margin-top: 10px;
+        margin-bottom: 150px;
+    }
+
+    body .article__section-10,
+    body .logodiv {
+        padding: 20px 25px;
+    }
+
+    .nav__div {
+        padding: 20px 25px;
+    }
+
+    h1 p {
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        line-height: 50px;
+    }
+
+    .article__section-00 .text {
+        font-size: 14px;
+    }
+}
+
